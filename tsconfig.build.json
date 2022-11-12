@@ -1,0 +1,7 @@
+{
+	"extends": "tsconfig-moon/tsconfig.json",
+	"compilerOptions": {
+    "moduleResolution": "NodeNext",
+    "target": "ES2022"
+  }
+}

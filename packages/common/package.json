@@ -1,0 +1,48 @@
+{
+  "name": "@tiramisujs/common",
+  "version": "1.0.0",
+  "description": "A set of packages for interacting with discord, focused on performance and scalability.",
+  "scripts": {
+    "build": "packemon build --addEngines --addExports --declaration --declarationConfig tsconfig.build.json",
+    "clean": "packemon clean",
+    "watch": "packemon watch",
+    "pack": "packemon pack --addEngines --addExports --declaration --declarationConfig tsconfig.build.json"
+  },
+  "keywords": [
+    "common"
+  ],
+  "author": "Miia Egnisa",
+  "license": "MIT",
+  "packemon": {
+    "format": "lib",
+    "platform": "node",
+    "support": "experimental"
+  },
+  "types": "./dts/index.d.ts",
+  "main": "./lib/index.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.5.0"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./*": {
+      "types": "./dts/*.d.ts",
+      "node": "./lib/*.js",
+      "default": "./lib/*.js"
+    },
+    ".": {
+      "types": "./dts/index.d.ts",
+      "node": "./lib/index.js",
+      "default": "./lib/index.js"
+    }
+  },
+  "files": [
+    "dts/**/*.d.ts",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

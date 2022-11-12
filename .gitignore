@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules
+cjs/
+dts/
+lib/
+
+# Environment
+.env
+
+# Turbo
+.turbo
+
+# Npm
+package-lock.json
