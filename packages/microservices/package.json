@@ -45,7 +45,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "devDependencies": {
+    "@tiramisujs/common": "1.0.0"
+  },
   "peerDependencies": {
     "@tiramisujs/common": "1.0.0"
+  },
+  "dependencies": {
+    "discord-api-types": "^0.37.17"
   }
 }
