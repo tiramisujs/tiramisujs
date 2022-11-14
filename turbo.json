@@ -1,13 +1,27 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
-    "build": {
+		"@tiramisujs/microservices#build": {
       "outputs": [
         "dts/**",
         "lib/**"
       ],
-      "dependsOn": []
-    },
+			"dependsOn": ["@tiramisujs/common#build"]
+		},
+		"@tiramisujs/common#build": {
+      "outputs": [
+        "dts/**",
+        "lib/**"
+      ],
+			"dependsOn": []
+		},
+		"@tiramisujs/biscuit#build": {
+      "outputs": [
+        "dts/**",
+        "lib/**"
+      ],
+			"dependsOn": ["@tiramisujs/microservices#build", "@tiramisujs/common#build"]
+		},
     "clean": {
       "cache": false
     },

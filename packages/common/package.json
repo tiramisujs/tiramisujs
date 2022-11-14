@@ -44,5 +44,8 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "discord-api-types": "^0.37.17"
   }
 }

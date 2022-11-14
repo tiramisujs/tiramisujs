@@ -26,6 +26,7 @@
   "homepage": "https://github.com/tiramisujs/tiramisujs#readme",
   "devDependencies": {
     "@types/node": "^18.11.9",
+    "chokidar": "^3.5.3",
     "eslint": "^8.27.0",
     "eslint-config-moon": "^1.2.0",
     "packemon": "^2.4.1",

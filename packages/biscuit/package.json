@@ -49,7 +49,10 @@
     "@tiramisujs/common": "1.0.0"
   },
   "peerDependencies": {
-    "@tiramisujs/microservices": "1.0.0",
-    "@tiramisujs/common": "1.0.0"
+    "@tiramisujs/common": "1.0.0",
+    "@tiramisujs/microservices": "1.0.0"
+  },
+  "dependencies": {
+    "discord-api-types": "^0.37.17"
   }
 }

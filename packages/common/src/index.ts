@@ -5,3 +5,4 @@
  */
 
 export * from './adapters';
+export * from './defaults';
