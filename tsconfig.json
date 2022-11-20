@@ -1,9 +1,3 @@
 {
-	"extends": "./tsconfig.build.json",
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"@tiramisujs/*": ["packages/*/src"]
-		}
-	}
+  "extends": "./tsconfig.build.json"
 }
