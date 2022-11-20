@@ -1,32 +1,21 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
-		"@tiramisujs/microservices#build": {
-      "outputs": [
-        "dts/**",
-        "lib/**"
-      ],
-			"dependsOn": ["@tiramisujs/common#build"]
-		},
+	"$schema": "https://turborepo.org/schema.json",
+	"baseBranch": "origin/main",
+	"pipeline": {
 		"@tiramisujs/common#build": {
-      "outputs": [
-        "dts/**",
-        "lib/**"
-      ],
 			"dependsOn": []
 		},
-		"@tiramisujs/biscuit#build": {
-      "outputs": [
-        "dts/**",
-        "lib/**"
-      ],
-			"dependsOn": ["@tiramisujs/microservices#build", "@tiramisujs/common#build"]
+		"@tiramisujs/microservices#build": {
+			"dependsOn": ["@tiramisujs/common#build"]
 		},
-    "clean": {
-      "cache": false
-    },
-    "watch": {
-      "cache": false
-    }
-  }
+		"clean": {
+			"cache": false
+		},
+		"lint": {
+			"outputs": []
+		},
+		"dev": {
+			"cache": false
+		}
+	}
 }

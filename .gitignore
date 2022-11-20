@@ -1,14 +1,42 @@
-# Dependency directories
+# dependencies
 node_modules
-cjs/
-dts/
-lib/
+.pnp
+.pnp.js
+.vscode
 
-# Environment
+# testing
+coverage
+
+# node
+out/
+dist/
+build
+package-lock.json
+
+# misc
+.DS_Store
+*.pem
+*.vs
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .env
 
-# Turbo
+# turbo
 .turbo
 
-# Npm
-package-lock.json
+# tests
+__tests__
+__test__
+
+# changeset
+.changeset

@@ -1,8 +1,4 @@
-/*
- * tiramisujs @common
- * https://www.tiramisujs.com
- * MIT Licensed
- */
-
-export * from './adapters';
-export * from './defaults';
+export * from './interfaces/bucket.spec';
+export * from './interfaces/etc.spec';
+export * from './interfaces/shard-spawner.spec';
+export * from './interfaces/shard.spec';
